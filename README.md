@@ -1,4 +1,4 @@
-# <strong> LXD virtualization of lab GPU servers <strong>
+# <strong> LXD virtualization of lab GPU servers </strong>
 The lab added a GPU server for deep learning, because the number of laboratories is relatively large, but the software used by each person varies widely. If multiple people use the same software, the software, environment, files, and configuration are mixed. There is even Xiaobai running commands that harm the system
 ! [image] (image / 小白 .gif)
 So we did virtualization. Why use LXD instead of the hottest docker?
