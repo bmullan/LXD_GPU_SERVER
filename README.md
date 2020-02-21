@@ -223,11 +223,11 @@ Both are based on lxc virtualization, and docker is an application container, an
 >> ## New container from template image
 >> In the future, use the template image to create the container directly. After the container is created, add port mapping for it (remote connection and SSH)
 >> Also add a graphics card for it (the graphics driver is already available) and configure its hardware parameters (the default configuration file can be used so that the parameters of the new container inherit it, this step can be omitted)
->>! [my-logo.png] (image / picture 15.png "my-logo")
-# [Result display (dual screen ~ sound)] (https://www.bilibili.com/video/av61400281 "Beep Beep Mile")
-! [my-logo.png] (image / picture 16.png "my-logo")
-! [my-logo.png] (image / picture 17.png "my-logo")
-! [my-logo.png] (image / picture 18.png "my-logo")
+>>! [my-logo.png] (image / picture 15.png "my-logo")  
+### [Result display (dual screen ~ sound)] (https://www.bilibili.com/video/av61400281 "Beep Beep Mile")  
+! [my-logo.png] (image / picture 16.png "my-logo")  
+! [my-logo.png] (image / picture 17.png "my-logo")  
+! [my-logo.png] (image / picture 18.png "my-logo")  
 
 
 >> ## Use docker in lxd container
