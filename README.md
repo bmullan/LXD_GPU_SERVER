@@ -147,7 +147,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> The graphics card version must be the same as that of the host computer. For the installation method, please refer to the first step of NVIDIA graphics card driver, CUDN, cuDNN installation
 >>> Please note that the following parameters need to be added when installing the graphics driver in the container, and it is not necessary to install it into the kernel during installation
 >>>> `sudo sh ./NVIDIA-Linux-X86_64-[YOURVERSION].run --no-kernel-module`  
-> # The fifth step: landscaping and other configuration of ubuntu
+> # Step 5: Landscape and other configuration of ubuntu
 >> ## icon icon theme
 >>> `sudo apt update`
 >>> `sudo apt install papirus-icon-theme`
