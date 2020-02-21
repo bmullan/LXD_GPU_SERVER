@@ -13,7 +13,6 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> [Graphics driver installation] nvidia-gpu-312a693744b5 "Linux graphics driver installation"),
 >>> Install NVIDIA graphics driver, CUDA, cuDNN
 
-
 > ## Step 2: Installation and initialization of lxd
 >> ### install lxd
 >>> LXD implements virtual container
@@ -91,19 +90,19 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>>> `sudo mv /etc/apt/sources.list / etc / apt / sources.list.bak`
 >>> ### Write to Netease Source (China Source)
 >>> ### (note the system version ubuntu 18.04 bionic)
->>>> `sudo vim / etc / apt / sources.list`
->>> `` `
->>> deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
->>> `` `
+>>>> `sudo vim / etc / apt / sources.list`  
+>>> `` `  
+>>> deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse  
+>>> `` `  
 >> ## 2. Install graphical interface
 >>> ### refresh source
 >>>> `sudo apt update`
@@ -147,8 +146,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> After adding the graphics card, it is equivalent to installing the graphics card in the container. We go back to the container and install the graphics driver.
 >>> The graphics card version must be the same as that of the host computer. For the installation method, please refer to the first step of NVIDIA graphics card driver, CUDN, cuDNN installation
 >>> Please note that the following parameters need to be added when installing the graphics driver in the container, and it is not necessary to install it into the kernel during installation
->>>> `sudo sh ./NVIDIA-Linux-X86_64-[YOURVERSION].run --no-kernel-module`
-
+>>>> `sudo sh ./NVIDIA-Linux-X86_64-[YOURVERSION].run --no-kernel-module`  
 > # The fifth step: landscaping and other configuration of ubuntu
 >> ## icon icon theme
 >>> `sudo apt update`
