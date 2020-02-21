@@ -382,16 +382,16 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> ### (note the system version ubuntu 18.04 bionic)
 >>>> `sudo vim / etc / apt / sources.list`
 >>> `` `
->>> deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
->>> deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
->>> deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+>>> deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+>>> deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse  
+>>> deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse  
 >>> `` `
 >> ## 2. Install graphical interface
 >>> ### refresh source
