@@ -52,7 +52,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> (if not set, the disk size in the container is the size of the entire storage pool)
 >>>! [my-logo.png] (image / picture 4.png "my-logo")
 
-> # Step 3: Create the container
+> ## Step 3: Create the container
 >> ## acceleration source
 >>> ### Use Tsinghua's mirror source (accelerated creation)
 >>>> `sudo lxc remote add tuna-images https://mirrors.tuna.tsinghua.edu.cn/lxc-images/ --protocol = simplestreams --public`
@@ -89,7 +89,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>>
 >>>> 60610 is our set port number, which is mapped to port 22 in the container through the host's 60601 port number (SSH default port number)
  
-> # Step 4: Initial container configuration
+> ## Step 4: Initial container configuration
 >> ## Use ssh to connect to the container and configure
 >>> `ssh ubuntu@172.22.24.126 -p 60601`
 >> ## 1. Change source
@@ -154,7 +154,8 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> The graphics card version must be the same as that of the host computer. For the installation method, please refer to the first step of NVIDIA graphics card driver, CUDN, cuDNN installation
 >>> Please note that the following parameters need to be added when installing the graphics driver in the container, and it is not necessary to install it into the kernel during installation
 >>>> `sudo sh ./NVIDIA-Linux-X86_64-[YOURVERSION].run --no-kernel-module`  
-> # Step 5: Landscape and other configuration of ubuntu
+  
+> ## Step 5: Landscape and other configuration of ubuntu
 >> ## icon icon theme
 >>> `sudo apt update`
 >>> `sudo apt install papirus-icon-theme`
@@ -197,7 +198,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>>>> `sudo lxc list`
 
 
-> # Step 6: Container Management
+> ## Step 6: Container Management
 >> ## Port forwarding table management
 >>> Because we use port forwarding to connect to the container, but the routing table rules will be lost when the host restarts
 >>> ### List port rules
@@ -221,7 +222,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >> ## Administrator notice
 >>> The administrator should create a new read.txt on the desktop, write down the system version and other information, what software is installed, various precautions, etc.
 
-> # Step 7: Container template
+> ## Step 7: Container template
 >> We use this configured container as a template and save it as an image.
 >>> ## Stop container
 >>>> `sudo lxc stop test`
@@ -235,7 +236,6 @@ Both are based on lxc virtualization, and docker is an application container, an
 ! [my-logo.png] (image / picture 16.png "my-logo")  
 ! [my-logo.png] (image / picture 17.png "my-logo")  
 ! [my-logo.png] (image / picture 18.png "my-logo")  
-
 
 >> ## Use docker in lxd container  
 >>>> `lxc config edit YourContainerName`  
@@ -276,7 +276,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> (if not set, the disk size in the container is the size of the entire storage pool)
 >>>! [my-logo.png] (image / picture 4.png "my-logo")
 
-> # Step 3: Create the container
+> ## Step 3: Create the container
 >> ## acceleration source
 >>> ### Use Tsinghua's mirror source (accelerated creation)
 >>>> `sudo lxc remote add tuna-images https://mirrors.tuna.tsinghua.edu.cn/lxc-images/ --protocol = simplestreams --public`
@@ -342,7 +342,8 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> Also limit the hard disk size of each container to a fixed size during configuration
 >>> (if not set, the disk size in the container is the size of the entire storage pool)
 >>>! [my-logo.png] (image / picture 4.png "my-logo")
-> # Step 3: Create the container
+  
+> ## Step 3: Create the container
 >> ## acceleration source
 >>> ### Use Tsinghua's mirror source (accelerated creation)
 >>>> `sudo lxc remote add tuna-images https://mirrors.tuna.tsinghua.edu.cn/lxc-images/ --protocol = simplestreams --public`
@@ -379,7 +380,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>>
 >>>> 60610 is our set port number, which is mapped to port 22 in the container through the host's 60601 port number (SSH default port number)
  
-> # Step 4: Initial container configuration
+> ## Step 4: Initial container configuration
 >> ## Use ssh to connect to the container and configure
 >>> `ssh ubuntu@172.22.24.126 -p 60601`
 >> ## 1. Change source
@@ -432,7 +433,8 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>>> 60611 is the port number we set, which is mapped to the 3389 port number in the container through the host's 60611 port number (XRDP default port number)
 >>> Can use container through windows remote connection (windows running mstsc)
 >>>>! [my-logo.png] (image / ubuntu.png "my-logo")
->>>> The next step is to use it as an ordinary ubuntu. For example, you can find some tutorials: things to do after installing ubuntu, etc.
+>>>> The next step is to use it as an ordinary ubuntu. For example, you can find some tutorials: things to do after installing ubuntu, etc.  
+  
 >> ## 5. Add graphics to the container
 >>> we go back to the host
 >>> ### Add all GPUs to the container:
@@ -445,7 +447,7 @@ Both are based on lxc virtualization, and docker is an application container, an
 >>> Please note that the following parameters need to be added when installing the graphics driver in the container, and it is not necessary to install it into the kernel during installation
 >>>> `sudo sh ./NVIDIA-Linux-X86_64-[YOURVERSION].run --no-kernel-module`
 
-> # The fifth step: landscaping and other configuration of ubuntu
+> ## Step 5: landscaping and other configuration of ubuntu
 >> ## icon icon theme
 >>> `sudo apt update`
 >>> `sudo apt install papirus-icon-theme`
